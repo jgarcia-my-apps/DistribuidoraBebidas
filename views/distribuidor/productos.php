@@ -37,15 +37,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <div>
-                        <?php
-                        $texto = "Registrar Producto";
-                        $color = "btn-primary";
-                        $action= "create";
-                        $productData = "{}"; // Para indicar que es un nuevo producto
-                        include '../components/button.php';
-                        ?>
-                    </div>
+                    
                 </div>
             </div>
             <div>

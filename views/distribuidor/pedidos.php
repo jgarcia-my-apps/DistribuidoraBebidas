@@ -19,7 +19,7 @@
         <div class="up">
             <?php
             $titulo = "Módulo de Pedidos";
-            $icono = "../../assets/images/Icon-Pedidos.png";
+            $icono = "../../assets/images/Icon-PedidoVentas.png";
             include '../components/title.php';
             ?>
         </div>
@@ -40,6 +40,7 @@
                         include '../components/dropdown.php';
                         ?>
                     </div>
+                    &nbsp;
                     <div>
                         <input type="date" class="form-control" id="fecha" name="fecha" placeholder="Fecha DD/MM/AAAA">
                     </div>
@@ -71,9 +72,9 @@
                 
                 // Definir acciones con íconos
                 $actions = [
-                    'edit' => '<i class="bi bi-pencil"></i>',
-                    'delete' => '<i class="bi bi-trash"></i>',
-                    'view' => '<i class="bi bi-eye"></i>'
+                    'view' => '../../assets/images/Icon-Informacion.png',
+                    'edit' => '../../assets/images/Icon-Actualizar.png',
+                    'delete' => '../../assets/images/Icon-Eliminar.png'
                 ];
                 
                 include '../components/table.php';
