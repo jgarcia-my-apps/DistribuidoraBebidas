@@ -64,13 +64,21 @@
                 
                 <?php
                 $module = 'pedidos';
+<<<<<<< HEAD
                 $columnas = ["Cédula", "Nombre de distribuidor", "Producto Vendido", "Nombre de cliente", "Cantidad", "Fecha", "Acciones"];
+=======
+                $columnas = ["Cédula", "Nombre de distribuidor", "Producto Vendido", "Nombre de cliente", "Cantidad", "Fecha"];
+>>>>>>> 77d5727a27ea2b14c0919621d52cd4a3524ce4de
                 $datos = [
                     ["1003456548", "José Eduardo Narváez", "Aguardiente Caucano IL", "Manuel Cordoba", 20, "10/05/2025"],
                     ["1003456548", "José Eduardo Narváez", "Manzana postobon 1.5 Lt", "José Luis Manzano", 15, "10/05/2025"],
                     ["1003456548", "José Eduardo Narváez", "Manzana postobon 1.5 Lt", "Manuel Cordoba", 23, "10/05/2025"],
                     ["1003456548", "José Eduardo Narváez", "Cerveza Poker 12oz", "Carlos Andrés López", 30, "09/05/2025"],
+<<<<<<< HEAD
                     ["1003456548", "José Eduardo Narváez", "Ron Medellín 750ml", "Ana María García", 8, "08/05/2025"]
+=======
+                    ["1003456548", "José Eduardo Narváez", "Ron Medellín 750ml", "Ana María García", 8, "08/05/2025"],
+>>>>>>> 77d5727a27ea2b14c0919621d52cd4a3524ce4de
                 ];
                 
                 // Definir acciones con íconos

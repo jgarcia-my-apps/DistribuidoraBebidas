@@ -11,61 +11,53 @@
     <div class="container-left">
         <?php include '../partials/sidebar.php'; ?>
     </div>
-
     <div class="container-right">
         <!-- ESTE ES UN COMPONENTE QUE SE CREO PARA TITULO, recuerden que la variable se coloca al principio y despues se llama -->
         <div class="up">
             <?php
-            $titulo = "Módulo de Ventas";
-            $icono = "../../assets/images/Icon-PedidoVentas.png";
+            $titulo = "Módulo de Cliente";
+            $icono = "../../assets/images/Icon-Productos.png";
             include '../components/title.php';
             ?>
         </div>
-
         <div class="down">
-            <!-- Barra de búsqueda y filtros -->
             <div class="search">
                 <div class="search1">
                     <div>
                         <?php
-                        $placeholder = "Buscar Venta...";
+                        $placeholder = "Buscar Cliente (Nombre o Cédula)";
                         include '../components/searchbar.php';
                         ?>
                     </div>
+                    <div class="button">
                     <div>
                         <?php
-                        $opciones = ["Tipo de Venta", "Venta en efectivo", "Venta a crédito"];
-                        include '../components/dropdown.php';
-                        ?>
-                    </div>
-                </div>
-                <div class="button">
-                    <div>
-                        <?php
-                        $texto = "Registrar Venta";
+                        $texto = "Registrar Cliente";
                         $color = "btn-primary";
                         $action = "create";
-                        $module = "ventas";
-                        $productData = "{}"; // Para indicar que es una nueva venta
+                        $module = 'pedidos';
+                        $pedidoData = "{}";
                         include '../components/button.php';
                         ?>
                     </div>
                 </div>
+                </div>
+                <div class="button">
+                    
+                </div>
             </div>
-
             <div>
                 <?php
-                // Datos de ejemplo de ventas
-                $module = 'ventas';
-                $columnas = ["Fecha", "Producto", "Cantidad", "Precio", "Total", "Vendedor"];
+                $module = 'clientes';
+                $columnas = ["Código", "Razón Social", "Nombre Cliente", "Cédula", "Teléfono", "Dirección Empresa", "Correo Electronico"];
                 $datos = [
-                    ["2025-04-01", "Aguardiente Caucano 1L", 3, 45000, 135000, "Carlos Pérez"],
-                    ["2025-04-02", "Cerveza Poker", 10, 3000, 30000, "Ana Gómez"],
-                    ["2025-04-02", "Aguardiente Caucano 1L", 2, 45000, 90000, "Carlos Pérez"],
-                    ["2025-04-03", "Cerveza Poker", 5, 3000, 15000, "Luis Fernández"],
-                    ["2025-04-03", "Aguardiente Caucano 1L", 4, 45000, 180000, "Ana Gómez"],
-                    ["2025-04-03", "Cerveza Poker", 8, 3000, 24000, "Carlos Pérez"]
-                ];
+                        ["001", "Estanco la 21", "Marcos Solarte", "1056788409", "3203445687", "Calle 10 # 23-45", "marcos@gmail.com"],
+                        ["002", "Supermercado El Sol", "Andrea Pérez", "1002345678", "3105678901", "Carrera 12 # 34-56", "andrea@gmail.com"],
+                        ["003", "Licorera San Juan", "Carlos Rodríguez", "1034567890", "3112345678", "Avenida 5 # 67-89", "carlos@gmail.com"],
+                        ["004", "Tienda La Esquina", "Luisa Fernández", "1012345678", "3123456789", "Calle 8 # 45-67", "luisa@gmail.com"],
+                        ["005", "Minimarket Express", "Pedro Gómez", "1023456789", "3134567890", "Carrera 15 # 78-90", "pedro@gmail.com"],
+                        ["006", "Bodega Central", "Ana Martínez", "1045678901", "3145678901", "Calle 20 # 56-78", "ana@gmail.com"],   
+                    ];
                 // Definir acciones con imágenes
                 $actions = [
                     'view' => '../../assets/images/Icon-Informacion.png',
@@ -77,7 +69,6 @@
             </div>
         </div>
     </div>
-
     <?php include '../components/modal.php'; ?>
     <script src="../../assets/js/modal.js"></script>
 </body>

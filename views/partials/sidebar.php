@@ -1,6 +1,11 @@
 <?php
 // Simulación de rol (esto vendría de la sesión de usuario en PHP)
+<<<<<<< HEAD
 $rol = "distribuidor"; // Cambiar a "distribuidor" según el usuario logueado
+=======
+session_start();
+$rol = $_SESSION['rol']; 
+>>>>>>> 77d5727a27ea2b14c0919621d52cd4a3524ce4de
 // Definir los elementos del menú según el rol
 $menuItems = [
     "administrador" => [
@@ -52,6 +57,7 @@ $menuItems = [
 
 <script>
     document.getElementById("logout-btn").addEventListener("click", function() {
-        window.location.href = "../auth/login.php"; // Asegúrate de que la ruta es correcta
+        
+        window.location.href = "../auth/logout.php"; // Asegúrate de que la ruta es correcta
     });
 </script>
