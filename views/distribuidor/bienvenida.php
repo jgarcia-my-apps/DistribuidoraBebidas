@@ -21,12 +21,8 @@
 
     <!-- Contenido principal -->
     <div class="container-right">
-<<<<<<< HEAD
-        <div class="welcome-container">
-=======
         <!-- Sección de bienvenida -->
         <div class="welcome-view">
->>>>>>> 77d5727a27ea2b14c0919621d52cd4a3524ce4de
             <div id="date-time" class="date-time-box"></div>
             <h2 class="welcome-text">Bienvenido, usted se encuentra en el panel de control de Distribuidor</h2>
             <div class="welcome-image">
@@ -36,8 +32,4 @@
     </div>
 </body>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 77d5727a27ea2b14c0919621d52cd4a3524ce4de
 </html>
