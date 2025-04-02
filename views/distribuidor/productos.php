@@ -42,6 +42,7 @@
             </div>
             <div>
                 <?php
+                $module = 'productos';
                 $columnas = ["Nombre", "Tipo de bebida", "Cantidad", "Precio", "Proveedor"];
                 $datos = [
                     ["Aguardiente Caucano 1L", "Licor", 20, 45000, "Cauca"],

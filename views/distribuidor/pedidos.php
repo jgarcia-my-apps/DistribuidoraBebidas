@@ -30,14 +30,14 @@
                 <div class="search1">
                     <div>
                         <?php
-                        $placeholder = "Buscar Código de Pedido...";
+                        $placeholder = "Buscar Códigopor distribuidor (Nombre o cc)";
                         include '../components/searchbar.php';
                         ?>
                     </div>
                     <div>
-                        <?php
-                        $opciones = ["Todos los productos", "Aguardiente", "Cerveza", "Refresco"];
-                        include '../components/dropdown.php';
+                    <?php
+                        $placeholder = "Buscar por Código de Pedido...";
+                        include '../components/searchbar.php';
                         ?>
                     </div>
                     &nbsp;
@@ -51,6 +51,7 @@
                         $texto = "Nuevo Pedido";
                         $color = "btn-primary";
                         $action = "create";
+                        $module = 'pedidos';
                         $pedidoData = "{}";
                         include '../components/button.php';
                         ?>
@@ -60,7 +61,9 @@
             
             <!-- Tabla de pedidos -->
             <div>
+                
                 <?php
+                $module = 'pedidos';
                 $columnas = ["Cédula", "Nombre de distribuidor", "Producto Vendido", "Nombre de cliente", "Cantidad", "Fecha", "Acciones"];
                 $datos = [
                     ["1003456548", "José Eduardo Narváez", "Aguardiente Caucano IL", "Manuel Cordoba", 20, "10/05/2025"],
